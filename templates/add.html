@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Queue</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <h1 align="center">Queue Information</h1>
+    <form action = "/savedetails" method="post">
+    <table class="table table-striped table-dark">
+
+
+
+        <div class="form-group">
+    <label>Ambassador ID</label>
+    <input type="int" class="form-control" name="Ambid"  placeholder="Ambassadorid">
+  </div>
+        <div class="form-group">
+    <label>Queue ID</label>
+    <input type="int" class="form-control" name="Queueid"  placeholder="Queueid">
+  </div>
+        <div class="form-group">
+    <label>Amount</label>
+    <input type="int" class="form-control" name="Amount"  placeholder="Amount">
+  </div>
+        <div class="form-group">
+    <label>Taskcount</label>
+    <input type="int" class="form-control" name="Taskcount"  placeholder="Taskcount">
+  </div>
+        <div class="form-group">
+    <label>State</label>
+    <input type="text" class="form-control" name="State" placeholder="State">
+  </div>
+        <div class="form-group">
+    <label>Reason</label>
+    <input type="text" class="form-control" name="Reason" placeholder="reason">
+  </div>
+        <tr><td><input type="submit" value="Submit"></td></tr>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<span class="border border-warning"></span>
+<div class="container">
+  <div class="jumbotron">
+<h3 align="center">Queue Information</h3>
+<table class="table table-striped">
+    <thead>
+        <td>Date</td>
+        <td>Ambid</td>
+        <td>Queueid</td>
+        <td>Amount</td>
+        <td>Taskcount</td>
+        <td>State</td>
+        <td>Reason</td>
+    </thead>
+
+    {% for row in rows %}
+
+        <tr>
+            <td>{{row["Datet"]}}</td>
+            <td>{{row["Ambid"]}}</td>
+            <td>{{row["Queueid"]}}</td>
+            <td>{{row["Amount"]}}</td>
+            <td>{{row["Taskcount"]}}</td>
+            <td>{{row["State"]}}</td>
+            <td>{{row["Reason"]}}</td>
+        </tr>
+
+    {% endfor %}
+</table>
+<br><br>
+
+<a href="/">Go back to home page</a>
+
+</body>
+</html>
